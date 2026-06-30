@@ -19,6 +19,8 @@ jastro_lazcore_app.exe
 
 Keep the `resources` folder next to the executable.
 
+For a step-by-step guide, see [INSTALLATION_WINDOWS.md](INSTALLATION_WINDOWS.md).
+
 ## Platforms
 
 - Windows 64-bit: available first.
@@ -27,4 +29,3 @@ Keep the `resources` folder next to the executable.
 ## Contact
 
 See [CONTACT.md](CONTACT.md).
-
