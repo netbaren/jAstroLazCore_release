@@ -1,0 +1,9 @@
+*.zip
+*.tar.gz
+*.7z
+dist/
+release/
+*.exe
+*.dll
+*.so
+*.dylib
