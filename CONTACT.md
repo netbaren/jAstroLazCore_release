@@ -1,7 +1,10 @@
 # Contact
 
-Contact address to be completed before the first public release.
+For questions, feedback or release-related issues, please contact:
 
-If you publish a release before choosing a final address, add the contact email
-to the release notes.
+rene.barnet [at] proton [dot] me
 
+Please include:
+- the jAstroLaz version,
+- your operating system,
+- a short description of the issue or request.
