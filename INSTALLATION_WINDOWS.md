@@ -4,6 +4,11 @@ This guide is for installing the Windows version from the public GitHub page.
 
 ## 1. Download
 
+Do not use `Code` > `Download ZIP`.
+
+That archive only contains the public repository documentation. It does not
+contain the application.
+
 Open the jAstroLazCore release page:
 
 https://github.com/netbaren/jAstroLazCore_release/releases

@@ -10,6 +10,9 @@ Pascal/Lazarus source tree is not included here.
 
 Prebuilt packages are published from the GitHub **Releases** page.
 
+Do not use `Code` > `Download ZIP`: that archive only contains this public
+repository documentation, not the application.
+
 For Windows, download the `jAstroLaz-win64-*.zip` archive, extract it to a
 writable folder, then run:
 
@@ -19,7 +22,10 @@ jastro_lazcore_app.exe
 
 Keep the `resources` folder next to the executable.
 
-For a step-by-step guide, see [INSTALLATION_WINDOWS.md](INSTALLATION_WINDOWS.md).
+For step-by-step guides, see:
+
+- [Installation Windows - francais](INSTALLATION_WINDOWS_FR.md)
+- [Windows installation - English](INSTALLATION_WINDOWS.md)
 
 ## Platforms
 
