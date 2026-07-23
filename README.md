@@ -2,10 +2,11 @@
 ============
 
 Windows 64-bit binary distribution.
+
 This public package contains binaries and runtime resources only.
 It does not contain the private Pascal/Lazarus source tree.
 
-Installation:
+* Installation:
     see INSTALLATION_WINDOWS.md
 
 
