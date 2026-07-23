@@ -1,109 +1,42 @@
-# Installer jAstroLazCore sous Windows
+Comment installer jAstroLazCore sous Windows
+Cette page explique comment télécharger, installer et lancer jAstroLazCore sous Windows. (Aucun outil de développement n’est nécessaire.)
 
-Cette page explique comment telecharger, installer et lancer jAstroLazCore sous
-Windows.
-
-Aucun outil de developpement n'est necessaire.
-
-## Important
-
-Sur GitHub, n'utilisez pas le bouton vert `Code`, puis `Download ZIP`.
-
-Ce bouton telecharge seulement les fichiers de presentation du depot public
-(`README`, `CONTACT`, etc.). Il ne contient pas l'application.
-
-Pour telecharger le programme, il faut utiliser la page `Releases` et prendre
-le fichier Windows place dans la section `Assets`.
-
-## 1. Aller sur la page de telechargement
-
-Ouvrez cette page dans votre navigateur :
-
+IMPORTANT !
+1. Aller sur la page de téléchargement
 https://github.com/netbaren/jAstroLazCore_release/releases
 
-La page affiche la derniere version disponible.
+La page affiche la dernière version disponible. Sur cette page GitHub, n’utilisez absolument pas le bouton vert Code. Ce bouton ne correspond pas au paquet Windows de l’application.
 
-## 2. Telecharger le fichier Windows
+Pour télécharger le programme, utilisez la page Releases (qui vient normalement d'être ouverte) puis récupérez le fichier Windows situé dans la section Assets.
 
-Dans la section `Assets`, telechargez uniquement le fichier dont le nom
-ressemble a :
+2. Dans la section Assets
+Option recommandée : installateur Windows
+Téléchargez le fichier d’installation .exe, par exemple : jAstroLaz_v1.02.exe
 
-```text
-jAstroLaz-win64-xxxxxxx.zip
-```
+Après le téléchargement, double-cliquez sur ce fichier. L’installation démarre automatiquement et crée le dossier de l'application ainsi que le raccourci comme habituellement avec Windows.
 
-Exemple :
+Option technique : archive ZIP portable
+Téléchargez le fichier .zip, par exemple : jAstroLaz-win64-1.02.zip
 
-```text
-jAstroLaz-win64-6a74da7.zip
-```
+Après le téléchargement :
 
-Ne telechargez pas :
+Créez un dossier, par exemple C:\jAstroLaz.
+Décompressez l’archive avec Extraire tout....
+Lancez l’application en double-cliquant sur son fichier .exe.
+Créer un raccourci peut ensuite faciliter son utilisation.
 
-- `Source code (zip)`
-- `Source code (tar.gz)`
+Notes
+Le dossier resources doit rester dans le même dossier que l’exécutable.
 
-Ces deux fichiers sont ajoutes automatiquement par GitHub et ne contiennent pas
-l'application Windows.
+Au premier lancement, l’application peut créer ou mettre à jour ses caches. Windows peut alors demander une ou plusieurs confirmations.
 
-Le fichier sera generalement place dans le dossier `Telechargements`.
+Comme l’application n’est pas signée avec un certificat commercial, Windows ou l’antivirus peut afficher un avertissement au premier lancement.
 
-## 3. Copier le zip dans un dossier simple
+Si le fichier a bien été téléchargé depuis la page officielle des releases :
 
-Cette etape n'est pas obligatoire, mais elle evite de perdre les fichiers dans
-le dossier `Telechargements`.
+Cliquez sur Informations complémentaires.
+Cliquez sur Exécuter quand même.
+Selon l’antivirus utilisé, il peut aussi être nécessaire d’autoriser le fichier ou de confirmer qu’il est sain.
 
-Dans l'explorateur de fichiers Windows :
-
-1. Creez un dossier, par exemple `C:\jAstroLaz`.
-2. Copiez le fichier `jAstroLaz-win64-xxxxxxx.zip` dans ce dossier.
-
-## 4. Decompresser le fichier
-
-Dans l'explorateur de fichiers Windows :
-
-1. Faites un clic droit sur le fichier `jAstroLaz-win64-xxxxxxx.zip`.
-2. Choisissez `Extraire tout...`.
-3. Validez le dossier propose.
-
-Il ne faut pas lancer le programme directement depuis le fichier zip. Il faut
-d'abord le decompresser.
-
-## 5. Lancer jAstroLazCore
-
-Ouvrez le dossier obtenu apres decompression, puis double-cliquez sur :
-
-```text
-jastro_lazcore_app.exe
-```
-
-Le dossier `resources` doit rester dans le meme dossier que l'executable.
-
-Au premier lancement, l'application peut creer ou mettre a jour ses caches.
-Windows peut alors demander une ou plusieurs confirmations.
-
-## Avertissement Windows
-
-Au premier lancement, Windows ou l'antivirus peut afficher un avertissement
-parce que l'application n'est pas signee avec un certificat commercial.
-
-Si vous faites confiance au fichier telecharge :
-
-1. Cliquez sur `Informations complementaires`.
-2. Cliquez sur `Executer quand meme`.
-
-Selon l'antivirus utilise, il peut aussi etre necessaire d'autoriser le fichier
-ou de confirmer qu'il peut etre execute.
-
-## En cas de probleme
-
-Verifiez d'abord les points suivants :
-
-- le fichier telecharge est bien `jAstroLaz-win64-xxxxxxx.zip` ;
-- le fichier n'est pas `Source code (zip)` ;
-- le fichier zip a bien ete decompresse avant de lancer l'application ;
-- le dossier `resources` est toujours present a cote de `jastro_lazcore_app.exe`.
-
-## Contact
-
-Pour une question ou un retour, voir [CONTACT.md](CONTACT.md).
+En cas de problème
+Pour toute question, voir CONTACT.md.
