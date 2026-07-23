@@ -1,105 +1,59 @@
-# Installing jAstroLazCore on Windows
 
-This page explains how to download, install and start jAstroLazCore on Windows.
+## How to Install jAstroLazCore on Windows
 
-No development tool is required.
+This page explains how to download, install, and run jAstroLazCore on Windows.
+(No development tools are required.)
 
-## Important
+## IMPORTANT !
 
-Do not use `Code` > `Download ZIP`.
-
-That archive only contains the public repository documentation (`README`,
-`CONTACT`, etc.). It does not contain the application.
-
-To download the program, use the `Releases` page and take the Windows file from
-the `Assets` section.
-
-## 1. Open the download page
-
-Open the jAstroLazCore release page:
+## 1. Go to the download page
 
 https://github.com/netbaren/jAstroLazCore_release/releases
 
-The page shows the latest available version.
+The page displays the latest available version.
+On this GitHub page, do not use the green `Code` button under any circumstances.
+This button does not correspond to the Windows package for the application.
 
-## 2. Download the Windows file
+To download the program, use the `Releases` page (which has just been opened)
+and then download the Windows file located in the `Assets` section.
 
-In the `Assets` section, download only the file named like:
+## 2. In the `Assets` section
 
-```text
-jAstroLaz-win64-xxxxxxx.zip
-```
+### Recommended option: Windows installer
 
-Example:
+Download the `.exe` installation file, for example: `jAstroLaz_v1.02.exe`
 
-```text
-jAstroLaz-win64-6a74da7.zip
-```
+After downloading, double-click this file.
+The installation will start automatically and create the application folder and shortcut
+as is standard with Windows.
 
-Do not download:
+### Technical option: portable ZIP archive
 
-- `Source code (zip)`
-- `Source code (tar.gz)`
+Download the `.zip` file, for example: `jAstroLaz-win64-1.02.zip`
 
-Those two files are added automatically by GitHub and do not contain the Windows
-application.
-
-Depending on the browser, the file is usually saved in the `Downloads` folder.
-
-## 3. Copy the zip file to a simple folder
-
-This step is optional, but it avoids losing the files in the `Downloads` folder.
-
-In Windows File Explorer:
+After downloading:
 
 1. Create a folder, for example `C:\jAstroLaz`.
-2. Copy the `jAstroLaz-win64-xxxxxxx.zip` file into that folder.
+2. Extract the archive using `Extract All...`.
+3. Launch the application by double-clicking its `.exe` file.
 
-## 4. Extract the zip file
+Creating a shortcut can then make it easier to use.
 
-In Windows File Explorer:
+## Notes
 
-1. Right-click the `jAstroLaz-win64-xxxxxxx.zip` file.
-2. Choose `Extract All...`.
-3. Confirm the proposed folder.
+The `resources` folder must remain in the same folder as the executable.
 
-Do not run the program directly from inside the zip file. It must be extracted first.
+Upon first launch, the application may create or update its caches. Windows may then prompt you for one or more confirmations.
 
-## 5. Start the application
+Since the application is not signed with a commercial certificate, Windows or your antivirus software may display a warning upon first launch.
 
-Open the extracted folder, then double-click:
-
-```text
-jastro_lazcore_app.exe
-```
-
-Keep the `resources` folder in the same folder as the executable.
-
-On first launch, the application may create or update its cache files. Windows
-may ask for one or more confirmations.
-
-## Windows security warning
-
-Windows or the antivirus may display a warning the first time the program is
-started because the application is not signed with a commercial certificate.
-
-If you trust the downloaded file:
+If the file was downloaded from the official releases page:
 
 1. Click `More info`.
 2. Click `Run anyway`.
 
-Depending on the antivirus, you may also need to allow the file or confirm that
-it can be executed.
+Depending on your antivirus software, you may also need to authorize the file or confirm that it is safe.
 
-## Troubleshooting
+## If You Encounter a Problem
 
-First check the following points:
-
-- the downloaded file is really `jAstroLaz-win64-xxxxxxx.zip`;
-- the file is not `Source code (zip)`;
-- the zip file has been extracted before starting the application;
-- the `resources` folder is still next to `jastro_lazcore_app.exe`.
-
-## Contact
-
-For questions or feedback, see [CONTACT.md](CONTACT.md).
+If you have any questions, see [CONTACT.md](CONTACT.md).
