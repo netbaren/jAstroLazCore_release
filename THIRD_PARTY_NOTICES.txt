@@ -1,0 +1,72 @@
+jAstroLazCore - mentions tierces et credits
+================================================
+
+Preparation release: 1.0.2
+
+Ce projet est une application d'astronomie Lazarus / Free Pascal. Les paquets
+publics generes par les scripts `uPS` contiennent les executables Windows et les
+ressources runtime, pas l'arbre source prive du projet.
+
+Inspirations historiques
+------------------------
+
+- Applets astronomiques de Juergen Giesen : etude et inspiration historiques.
+  Aucun code d'applet n'est redistribue dans le paquet runtime public.
+
+- JPARSEC, T. Alonso Albi, Espagne : package Java dedie a l'astronomie et a la
+  dynamique celeste, utilise comme reference historique et conceptuelle du
+  travail Java initial. Ne pas redistribuer de binaire ou source JPARSEC sans
+  verifier la licence exacte du materiel concerne.
+
+- JavAstro, Filippo Bisognano, Italie : application d'astronomie Java, source
+  d'inspiration historique apres JPARSEC. Aucun binaire ou source JavAstro
+  n'est redistribue dans le paquet runtime public.
+
+Catalogues, modeles et donnees astronomiques
+--------------------------------------------
+
+- Bright Star Catalog / Yale Bright Star Catalog : utilise via
+  `resources/starsCatalog` pour le rendu des etoiles brillantes. Conserver la
+  provenance du catalogue avec toute distribution publique du fichier de donnees
+  et verifier les conditions de redistribution si la source exacte evolue.
+
+- VSOP / VSOP87 : theorie planetaire et donnees associees publiees par
+  IMCCE / Bureau des longitudes. Les fichiers runtime locaux et ports de calcul
+  doivent conserver cette attribution.
+
+- INPOP19a : ephemerides planetaire et lunaire IMCCE. Les caches runtime locaux
+  peuvent etre reconstruits depuis les fichiers ASCII INPOP19a; ne pas publier
+  les sources ASCII originales ni des caches derives sans confirmation des
+  conditions de redistribution applicables.
+
+- IANA Time Zone Database : utilisee pour generer `resources/timezones.csv`.
+  Conserver la version TZDB dans l'en-tete du CSV et verifier regulierement la
+  disponibilite d'une version plus recente.
+
+- PascalTZ : generateur de fuseaux horaires base sur les sources PascalTZ
+  presentes sous `tools/PascalTZ`, initialement par Jose Mejuto et maintenues par
+  Denis Kozlov. Les fichiers locaux indiquent une licence LGPL / modified LGPL.
+
+- SkyChart / Cartes du Ciel - donnees Voie lactee : les fichiers sous
+  `resources/milkyway` doivent rester accompagnes de leur `Readme.txt`, qui
+  contient les credits de provenance.
+
+Liens et services mentionnes par l'interface
+--------------------------------------------
+
+- NOAA SWPC - Aurora 30 minute forecast
+- NASA - Solar System
+- IMCCE - Lettre d'information
+
+Ces liens sont des references affichees dans l'application; leur contenu externe
+n'est pas redistribue par le paquet runtime.
+
+Points a verifier avant publication publique
+--------------------------------------------
+
+- Confirmer explicitement les conditions de redistribution des donnees Bright
+  Star Catalog, VSOP et INPOP incluses ou derivees.
+- Confirmer la licence exacte des eventuels extraits JPARSEC si un generateur ou
+  une ressource derivee devait etre publiee.
+- Verifier que `resources/timezones.csv` mentionne une version IANA TZDB recente
+  dans son en-tete.
