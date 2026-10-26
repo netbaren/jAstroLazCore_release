@@ -1,9 +1,9 @@
 jAstroLaz package manifest
 ==========================
 
-Package: jAstroLaz-win64-2.0
-Built:   2026-07-29 14:46:30
-Commit:  70e6d81
+Package: jAstroLaz-win64-2.4
+Built:   2026-10-25 16:36:06
+Commit:  66a2701
 
 Included:
 - jastro_lazcore_app.exe
@@ -11,6 +11,7 @@ Included:
 - resources/
 - build/java-tools/ Skyline* runtime generator classes
 - resources/sky/astro_palette.pas skyline palette snapshot
+- checked runtime visuals: Saisons Earth globe, Jupiter BIG, Saturn inclinations
 - README.txt
 - CONTACT.txt
 - THIRD_PARTY_NOTICES.txt, when present
@@ -22,6 +23,12 @@ Excluded:
 - tools/
 - uPS/
 - resources/garbage/
+- resources/constellations.pre-jparsec.zip
 - resources/icon/lw_Pdgtt.png
+- resources/sky/Mimsy_0.jpg
+- resources/*.docx
+- resources/AdminUsers.txt (propre au poste de developpement)
+- resources/inpop19a_TDB_m100_p100_asc/ (raw INPOP ASCII data; only the
+  header file is kept, positions come from resources/inpop19a_cache/)
 - .git/
 - Pascal/Lazarus source and project files, except the packaged skyline palette snapshot
