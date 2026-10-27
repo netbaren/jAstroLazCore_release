@@ -1,61 +1,73 @@
-# jAstroLaz — visual astronomy for Windows
+# jAstroLaz — astronomie visuelle pour Windows
 
-*[Version française](README.fr.md)*
+*[English version](README.md)*
 
-Windows 64-bit executable package.
+**jAstroLaz** est un logiciel d'astronomie gratuit pour Windows, écrit en **Lazarus / Free Pascal**.
+Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie visuel**, qui montre et explique ce qui se passe au-dessus de nos têtes.
+
 <img width="668" height="481" alt="image" src="https://github.com/user-attachments/assets/28e2b745-4eeb-4b90-85a9-6c990599c731" />
-Private source commit: 66a2701
-Package file: jAstroLaz-win64-2.4.zip
-SHA256: e38820edd5e96c25560d96c15ef5c18e84fbb90a8d67950c9a039d41b4a0da01
 
-**jAstroLaz** is free astronomy software for Windows, written in **Lazarus / Free Pascal**.
-It is not a sky encyclopedia but rather a **visual astronomy book**: it shows and explains what happens above our heads.
+## Ce que fait jAstroLaz
 
-jAstroLaz is a personal astronomy application for Windows, developed with Lazarus / Free Pascal. It brings together calculations, interactive diagrams, animations and explanatory material to help explore and understand what we observe.
-Its main focus is the study of time (solar, civil, sidereal…) and the Solar System: the Sun, the Moon, Earth and the planets, their apparent motions and associated phenomena. A planetarium extends this exploration to the starry sky.
+- **Astrolabe** : un astrolabe animé, pour comprendre comment cet instrument ancien représente le ciel.
+- **Trajectoire du Soleil** avec le **relief local** : la course du Soleil est tracée au-dessus du profil réel des montagnes de l'horizon (par exemple pour un site en Valais), pour savoir quand le Soleil se lève vraiment derrière les crêtes.
+- **Équation du temps** : l'écart entre l'heure solaire et l'heure de la montre, au fil de l'année.
+- **Voyage dans le temps** : on peut afficher le ciel à n'importe quelle date, passée ou future, et pas seulement maintenant.
+- **Ciel étoilé** : étoiles brillantes, Voie lactée, planètes.
+- **Liste de sites d'observation** (Genève par défaut, horizon dégagé).
 
-## Features
-- **Astrolabe**: an animated astrolabe showing how this ancient instrument maps the sky.
-- **Sun path with local relief**: the Sun's course drawn over the real mountain skyline of the site, to see when the Sun actually rises behind the ridges.
-- **Equation of time**: the difference between solar time and clock time throughout the year.
-- **Time travel**: display the sky at any date, past or future.
-- **Starry sky**: bright stars, Milky Way, planets.
-- Several **observing sites** (Geneva by default, clear horizon).
+<!-- Ajouter / retirer des points selon la version 2.4 -->
 
-## Download and install
+## Téléchargement et installation
 
-1. Go to **[Releases](https://github.com/netbaren/jAstroLazCore_release/releases)** and take the latest version.
-2. Two formats:
-   - `jAstroLaz_v2.4.exe`: installer (built with [Inno Setup](https://jrsoftware.org/isinfo.php), a widely used free installer);
-   - `jAstroLaz-win64-2.4.zip`: portable version, unzip and run, no installation.
-3. Details: [INSTALLATION_WINDOWS.md](INSTALLATION_WINDOWS.md).
+1. Ouvrir la page **[Releases](https://github.com/netbaren/jAstroLazCore_release/releases)** et prendre la dernière version.
+2. Deux formats au choix :
+   - `jAstroLaz_v2.4.exe` : installeur (réalisé avec [Inno Setup](https://jrsoftware.org/isinfo.php), un installeur gratuit très répandu) ;
+   - `jAstroLaz-win64-2.4.zip` : version portable, à décompresser et lancer sans installation.
+3. Détails : voir [INSTALLATION_WINDOWS_FR.md](INSTALLATION_WINDOWS_FR.md).
 
-Requirements: Windows 10 or 11, 64-bit.
+Configuration : Windows 10 ou 11, 64 bits.
 
-### "Windows protected your PC"?
+### Message « Windows a protégé votre ordinateur » ?
 
-jAstroLaz is not signed with a (paid) commercial certificate, so Windows SmartScreen warns about it like any new program it doesn't know yet. Click **More info**, then **Run anyway**.
+jAstroLaz n'est pas signé avec un certificat commercial (payant). Windows SmartScreen affiche donc un avertissement pour tout programme récent qu'il ne connaît pas encore. Cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
 
-## Security and verification
+## Sécurité et vérification
 
-| File | SHA-256 | Antivirus scan |
-|---|---|---|
-| `jAstroLaz_v2.4.exe` | `2cc695ee5e0874406b14f27aa7d11de45a0e0ad35badcf169a496b7b500caa24` | [VirusTotal: 0 / 64 detections](https://www.virustotal.com/gui/file/2cc695ee5e0874406b14f27aa7d11de45a0e0ad35badcf169a496b7b500caa24) |
+Chaque fichier publié peut être vérifié :
 
-| `jAstroLaz-win64-2.4.zip` | `e38820edd5e96c25560d96c15ef5c18e84fbb90a8d67950c9a039d41b4a0da01` | [VirusTotal: No security vendors flagged this file as malicious](https://www.virustotal.com/gui/file/e38820edd5e96c25560d96c15ef5c18e84fbb90a8d67950c9a039d41b4a0da01?nocache=1) |
+| Fichier | SHA-256 | Analyse antivirus |
+|---------|---------|-------------------|
+| `jAstroLaz_v2.4.exe` | `47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3) |
+| `jAstroLaz-win64-2.4.zip` | `d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b) |
 
-```powershell 
+Pour vérifier l'empreinte sous PowerShell :
+
+```powershell
 Get-FileHash .\jAstroLaz_v2.4.exe
+```
+Le programme ne se connecte à Internet que pour la vérification manuelle des mises à jour (menu dédié, interroge uniquement les releases publiques sur GitHub, sans envoyer ni collecter la moindre donnée). 
+Aucune autre fonction n’accède au réseau.
 
-**The program does not connect to the Internet and collects no data.**
+## Un peu d'histoire
 
-## History
-Started around 2004–2007 in **Java** (Eclipse), revived in 2020, and fully rewritten in **Lazarus / Free Pascal** from 2026 with the help of AI assistants (Claude, Codex).
+Le projet est né vers 2004–2007 en **Java**, sous Eclipse, à partir d'une passion pour les calculs astronomiques.
+Repris en 2020, il a été entièrement réécrit en **Lazarus / Free Pascal** à partir de 2026, avec l'aide d'assistants IA (Claude, Codex).
 
-## Credits
-- Inspirations: Juergen Giesen's astronomy applets, JPARSEC (T. Alonso Albi), JavAstro (Filippo Bisognano).
-- Data and models: Bright Star Catalog, VSOP87, INPOP19a, IANA TZDB / PascalTZ, SkyChart / Cartes du Ciel Milky Way data.
-- Details and licences: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+## Remerciements et sources
+
+- Inspirations : applets d'astronomie de Juergen Giesen, JPARSEC (T. Alonso Albi), JavAstro (Filippo Bisognano).
+- Données et modèles : Bright Star Catalog, VSOP87, INPOP19a, IANA TZDB / PascalTZ, données Voie lactée de SkyChart / Cartes du Ciel.
+- Détails et licences : [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+
+## Licence
+
+Logiciel gratuit (pour Utilisation Non commerciale seulement), distribué sous forme compilée. 
+(publication des droits IMCC, JPARSEC, SHADOWS à venir prochainement)
+
+## Contact
+
+René Barnet — rene.barnet [at] proton [dot] me — voir [CONTACT.md](CONTACT.md)
 
 ## Contact
 René Barnet — rene.barnet [at] proton [dot] me — see [CONTACT.md](CONTACT.md)
