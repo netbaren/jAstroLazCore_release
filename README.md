@@ -1,6 +1,6 @@
 # jAstroLaz — astronomie visuelle pour Windows
 
-*[English version](README.md)*
+*[English version](README_us_EN.md)*
 
 **jAstroLaz** est un logiciel d'astronomie gratuit pour Windows, écrit en **Lazarus / Free Pascal**.
 Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie visuel**, qui montre et explique ce qui se passe au-dessus de nos têtes.
