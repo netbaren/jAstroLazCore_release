@@ -68,6 +68,3 @@ Logiciel gratuit (pour Utilisation Non commerciale seulement), distribué sous f
 ## Contact
 
 René Barnet — rene.barnet [at] proton [dot] me — voir [CONTACT.md](CONTACT.md)
-
-## Contact
-René Barnet — rene.barnet [at] proton [dot] me — see [CONTACT.md](CONTACT.md)

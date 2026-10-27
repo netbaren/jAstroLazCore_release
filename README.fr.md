@@ -1,13 +1,11 @@
 # jAstroLaz — astronomie visuelle pour Windows
 
-*[English version](README.md)*
+*[English version](README_us_EN.md)*
 
 **jAstroLaz** est un logiciel d'astronomie gratuit pour Windows, écrit en **Lazarus / Free Pascal**.
 Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie visuel**, qui montre et explique ce qui se passe au-dessus de nos têtes.
 
-![Capture d'écran principale](docs/screenshots/main.png)
-<!-- Remplacer par une vraie capture d'écran -->
-Son domaine principal est l'étude du temps (solaire, civil, sidéral…) et du Système solaire : le Soleil, la Lune, la Terre et les planètes, leurs mouvements apparents et les phénomènes associés. Un planétarium étend cette exploration au ciel étoilé.
+<img width="668" height="481" alt="image" src="https://github.com/user-attachments/assets/28e2b745-4eeb-4b90-85a9-6c990599c731" />
 
 ## Ce que fait jAstroLaz
 
@@ -16,7 +14,7 @@ Son domaine principal est l'étude du temps (solaire, civil, sidéral…) et du 
 - **Équation du temps** : l'écart entre l'heure solaire et l'heure de la montre, au fil de l'année.
 - **Voyage dans le temps** : on peut afficher le ciel à n'importe quelle date, passée ou future, et pas seulement maintenant.
 - **Ciel étoilé** : étoiles brillantes, Voie lactée, planètes.
-- Plusieurs **sites d'observation** (Genève par défaut, horizon dégagé).
+- **Liste de sites d'observation** (Genève par défaut, horizon dégagé).
 
 <!-- Ajouter / retirer des points selon la version 2.4 -->
 
@@ -39,17 +37,17 @@ jAstroLaz n'est pas signé avec un certificat commercial (payant). Windows Smart
 Chaque fichier publié peut être vérifié :
 
 | Fichier | SHA-256 | Analyse antivirus |
-|---|---|---|
-| `jAstroLaz_v2.4.exe` | `2cc695ee5e0874406b14f27aa7d11de45a0e0ad35badcf169a496b7b500caa24` | [VirusTotal: 0 / 64 detections](https://www.virustotal.com/gui/file/2cc695ee5e0874406b14f27aa7d11de45a0e0ad35badcf169a496b7b500caa24) |
-
-| `jAstroLaz-win64-2.4.zip` | `e38820edd5e96c25560d96c15ef5c18e84fbb90a8d67950c9a039d41b4a0da01` | [VirusTotal: No security vendors flagged this file as malicious](https://www.virustotal.com/gui/file/e38820edd5e96c25560d96c15ef5c18e84fbb90a8d67950c9a039d41b4a0da01?nocache=1) |
-
+|---------|---------|-------------------|
+| `jAstroLaz_v2.4.exe` | `47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3) |
+| `jAstroLaz-win64-2.4.zip` | `d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b) |
 
 Pour vérifier l'empreinte sous PowerShell :
+
 ```powershell
 Get-FileHash .\jAstroLaz_v2.4.exe
 ```
-** Le programme ne se connecte pas à Internet et ne collecte aucune donnée. **
+Le programme ne se connecte à Internet que pour la vérification manuelle des mises à jour (menu dédié, interroge uniquement les releases publiques sur GitHub, sans envoyer ni collecter la moindre donnée). 
+Aucune autre fonction n’accède au réseau.
 
 ## Un peu d'histoire
 
@@ -61,6 +59,11 @@ Repris en 2020, il a été entièrement réécrit en **Lazarus / Free Pascal** �
 - Inspirations : applets d'astronomie de Juergen Giesen, JPARSEC (T. Alonso Albi), JavAstro (Filippo Bisognano).
 - Données et modèles : Bright Star Catalog, VSOP87, INPOP19a, IANA TZDB / PascalTZ, données Voie lactée de SkyChart / Cartes du Ciel.
 - Détails et licences : [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+
+## Licence
+
+Logiciel gratuit (pour Utilisation Non commerciale seulement), distribué sous forme compilée. 
+(publication des droits IMCC, JPARSEC, SHADOWS à venir prochainement)
 
 ## Contact
 
