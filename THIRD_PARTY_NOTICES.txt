@@ -13,12 +13,15 @@ Inspirations historiques
 - Applets astronomiques de Juergen Giesen : etude et inspiration historiques.
   Aucun code d'applet n'est redistribue dans le paquet runtime public.
 
-- JPARSEC, T. Alonso Albi, Espagne : package Java dedie a l'astronomie et a la
-  dynamique celeste, utilise comme reference historique et conceptuelle du
-  travail Java initial. Aucun binaire ou source JPARSEC n'est redistribue dans
-  le paquet runtime public.
+- JPARSEC, T. Alonso Albi, Espagne : package Java dedié à l'astronomie et à la
+  dynamique céleste, utilisé comme référence historique et conceptuelle du
+  travail Java initial. Aucun binaire ou source JPARSEC n'est redistribué dans
+  le paquet runtime public. Mention communiquee a l'auteur, qui l'a accueillie
+  favorablement (courriel du 28/10/2026).
+  Code source JPARSEC : https://bitbucket.org/talonsoalbi/jparsec
   (EN: JPARSEC, by T. Alonso Albi, Spain - historical and conceptual reference
-  for the original Java work. No JPARSEC code or binaries are redistributed.)
+  for the original Java work. No JPARSEC code or binaries are redistributed.
+  Acknowledgement welcomed by the author, email of 28/10/2026.)
 
 - JavAstro, Filippo Bisognano, Italie : application d'astronomie Java, source
   d'inspiration historique apres JPARSEC. Aucun binaire ou source JavAstro
