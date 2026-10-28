@@ -15,8 +15,10 @@ Inspirations historiques
 
 - JPARSEC, T. Alonso Albi, Espagne : package Java dedie a l'astronomie et a la
   dynamique celeste, utilise comme reference historique et conceptuelle du
-  travail Java initial. Ne pas redistribuer de binaire ou source JPARSEC sans
-  verifier la licence exacte du materiel concerne.
+  travail Java initial. Aucun binaire ou source JPARSEC n'est redistribue dans
+  le paquet runtime public.
+  (EN: JPARSEC, by T. Alonso Albi, Spain - historical and conceptual reference
+  for the original Java work. No JPARSEC code or binaries are redistributed.)
 
 - JavAstro, Filippo Bisognano, Italie : application d'astronomie Java, source
   d'inspiration historique apres JPARSEC. Aucun binaire ou source JavAstro
@@ -25,10 +27,8 @@ Inspirations historiques
 Catalogues, modeles et donnees astronomiques
 --------------------------------------------
 
-- Bright Star Catalog / Yale Bright Star Catalog : utilise via
-  `resources/starsCatalog` pour le rendu des etoiles brillantes. Conserver la
-  provenance du catalogue avec toute distribution publique du fichier de donnees
-  et verifier les conditions de redistribution si la source exacte evolue.
+- Bright Star Catalog / Yale Bright Star Catalog (D. Hoffleit, W. H. Warren Jr.) :
+  utilise via `resources/starsCatalog` pour le rendu des etoiles brillantes.
 
 - VSOP / VSOP87 : theorie planetaire et donnees associees, produites a
   l'origine par l'IMCCE / Bureau des longitudes. Depuis la fusion de l'IMCCE
@@ -36,28 +36,67 @@ Catalogues, modeles et donnees astronomiques
   ces donnees sont diffusees par le Service Espace de l'Observatoire de Paris
   (SE-OP) sous Licence Ouverte 2.0
   (https://github.com/etalab/licence-ouverte/blob/master/LO.md), confirme par
-  courriel par M. Mickael Gastineau (LTE) le 27/10/2026. Reutilisation libre
-  sous reserve de citer "Service espace de l'Observatoire de Paris" et la date
-  de derniere mise a jour des donnees utilisees (voir CGU,
-  https://seop.obspm.fr/cgu/, section "Conditions applicables aux donnees").
+  courriel par M. Mickael Gastineau (LTE) le 27/10/2026.
+  Source : Service espace de l'Observatoire de Paris - donnees mises a jour
+  le [24/09/2026].
+  (voir CGU, https://seop.obspm.fr/cgu/, section "Conditions applicables aux
+  donnees").
 
-- INPOP19a : ephemerides planetaire et lunaire, memes conditions que VSOP87
-  ci-dessus (Licence Ouverte 2.0, SE-OP, confirme le 27/10/2026). Les caches
-  runtime locaux sont reconstruits depuis les fichiers ASCII INPOP19a; seuls
-  ces caches derives sont redistribues avec le paquet public, pas les sources
-  ASCII originales.
+- INPOP19a : ephemerides planetaires et lunaires, memes conditions que VSOP87
+  ci-dessus (Licence Ouverte 2.0, SE-OP, confirme le 27/10/2026).
+  Source : Service espace de l'Observatoire de Paris - donnees mises a jour
+  le [24/09/2026].
+  Les caches runtime locaux sont reconstruits depuis les fichiers ASCII
+  INPOP19a; seuls ces caches derives sont redistribues avec le paquet public,
+  pas les sources ASCII originales.
 
 - IANA Time Zone Database : utilisee pour generer `resources/timezones.csv`.
-  Conserver la version TZDB dans l'en-tete du CSV et verifier regulierement la
-  disponibilite d'une version plus recente.
+  La version TZDB utilisee figure dans l'en-tete de ce fichier.
 
 - PascalTZ : generateur de fuseaux horaires base sur les sources PascalTZ
   presentes sous `tools/PascalTZ`, initialement par Jose Mejuto et maintenues par
   Denis Kozlov. Les fichiers locaux indiquent une licence LGPL / modified LGPL.
 
-- SkyChart / Cartes du Ciel - donnees Voie lactee : les fichiers sous
-  `resources/milkyway` doivent rester accompagnes de leur `Readme.txt`, qui
-  contient les credits de provenance.
+- Voie lactee (contours et zones, fichiers MWSMP6) : donnees de Jose R. Vieira
+  (Sao Paulo, Bresil, 2000), diffusees avec SkyChart / Cartes du Ciel.
+  Elles s'appuient sur l'ouvrage "Uranografia, Descricao do Ceu" de
+  R. R. de Freitas Mourao et sur une photomosaique de la Voie lactee
+  d'Axel Mellinger. Texte d'origine de l'auteur, reproduit tel quel :
+
+    The outline 1 and shade 1 are based on the book 'Uranografia, Descrição
+    do Céu', by R.R. de Freitas Mourão, a Brazilian astronomer. The equatorial
+    coordinates were manually taken from his maps. Then, they were converted
+    to galactic coordinates using Microsoft Excel and manually inserted onto a
+    bitmap as black pixels over a white background. The bitmap dimensions were
+    450 by 3600 pixels, making each pixel correspond to 0.1 degree. The pixels
+    were manually connected (and their connections smoothed) using Adobe
+    Photoshop 3.0. That created the base for outline 1. Finally, the space
+    between the two curves defining outline 1 was filled with black pixels,
+    creating the base for shade 1.
+
+    The outlines and shades 2 to 5 are based on a photomosaic of the Milky Way
+    created by the German astrophotographer Axel Mellinger. The original
+    picture, dowloaded from his website
+    (http://canopus.physik.uni-potsdam.de/~axm/astrophot.html), was 300 by
+    2400 pixels in size. It was expanded to 450 by 3600, using Adobe
+    Photoshop. Still in Adobe Photoshop, an 1 pixel 'minimum' filter was
+    applied to eliminate individual star images. After some adjustmests in
+    brightness and contrast and conversion to a grayscale bitmap, a 2 pixels
+    'gaussian blur' filter was used to create a 'cloudy' aspect. Then, a
+    'trace contour' filter was applied in four brightness levels, creating the
+    bases for outlines 2 to 5. These were filled with black pixels, creating
+    the bases for shades 2 to 5.
+
+    Once the base bitmap files had been created, an application written in
+    Microsoft Visual Basic 6.0 was used to scan the images, find black pixels,
+    get their coordinates in pixels, convert them to galactic coordinates and
+    then to equatorial coordinates which were sent to text files. These are
+    the DAT files included in MWSMP6.ZIP.
+
+    The average distance between each point in the outlines is 0.1° or 6'.
+    For the shades, it is 0.4º or 24'.
+
+    José R. Vieira, Sao Paulo, Brazil, Feb/2000
 
 Liens et services mentionnes par l'interface
 --------------------------------------------
@@ -68,14 +107,3 @@ Liens et services mentionnes par l'interface
 
 Ces liens sont des references affichees dans l'application; leur contenu externe
 n'est pas redistribue par le paquet runtime.
-
-Points a verifier avant publication publique
---------------------------------------------
-
-- Confirmer explicitement les conditions de redistribution des donnees Bright
-  Star Catalog incluses ou derivees (VSOP87/INPOP19a : confirme, voir
-  ci-dessus).
-- Confirmer la licence exacte des eventuels extraits JPARSEC si un generateur ou
-  une ressource derivee devait etre publiee.
-- Verifier que `resources/timezones.csv` mentionne une version IANA TZDB recente
-  dans son en-tete.
