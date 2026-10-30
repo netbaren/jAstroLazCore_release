@@ -16,7 +16,23 @@ It isn't an encyclopedia of the sky: think of it more as a **visual astronomy bo
 - **Starry sky**: bright stars, the Milky Way, planets.
 - **List of observation sites** (Geneva by default, clear horizon).
 
-<!-- Add / remove points depending on version 2.4 -->
+## Security and verification
+
+Private source commit: f3ea157
+
+Each published file has been scanned by VirusTotal, as shown in the reports below:
+
+|     Fichier               |   SHA-256                                                          | Analyse antivirus                                                                                                                      |
+|---------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `jAstroLaz_v2.4.exe`      | `1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866 ) |
+| `jAstroLaz-win64-2.4.zip` | `a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712` | [VirusTotal : 0 / 66 détection](https://www.virustotal.com/gui/file/a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712 ) |
+
+To check the fingerprints in PowerShell:
+
+```powershell
+cd [installation folder]
+Get-FileHash .\jAstroLaz_v2.4.exe, .\jAstroLaz-win64-2.4.zip
+```
 
 ## Download and installation
 
@@ -32,20 +48,6 @@ Requirements: Windows 10 or 11, 64-bit.
 
 jAstroLaz isn't signed with a commercial (paid) certificate. Windows SmartScreen shows this warning for any recent program it doesn't yet recognize. Click **More info**, then **Run anyway**.
 
-## Security and verification
-
-Every published file can be verified:
-
-| File | SHA-256 | Antivirus scan |
-|------|---------|-----------------|
-| `jAstroLaz_v2.4.exe` | `47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3` | [VirusTotal: 0 / 64 detections](https://www.virustotal.com/gui/file/47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3) |
-| `jAstroLaz-win64-2.4.zip` | `d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b` | [VirusTotal: 0 / 64 detections](https://www.virustotal.com/gui/file/d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b) |
-
-To check the fingerprint in PowerShell:
-
-```powershell
-Get-FileHash .\jAstroLaz_v2.4.exe
-```
 The program only connects to the Internet for the manual update check (dedicated menu, which only queries the public releases on GitHub, without sending or collecting any data).
 No other feature accesses the network.
 

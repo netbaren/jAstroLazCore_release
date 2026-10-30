@@ -16,7 +16,23 @@ Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie v
 - **Ciel étoilé** : étoiles brillantes, Voie lactée, planètes.
 - **Liste de sites d'observation** (Genève par défaut, horizon dégagé).
 
-<!-- Ajouter / retirer des points selon la version 2.4 -->
+## Sécurité et vérification
+
+Private source commit: f3ea157
+
+Chaque fichier publié a été vérifié par VirusTotal comme en témoignent les compte rendus ci-dessous :
+
+|     Fichier               |   SHA-256                                                          | Analyse antivirus                                                                                                                      |
+|---------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `jAstroLaz_v2.4.exe`      | `1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866 ) |
+| `jAstroLaz-win64-2.4.zip` | `a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712` | [VirusTotal : 0 / 66 détection](https://www.virustotal.com/gui/file/a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712 ) |
+
+Pour vérifier les empreintes sous PowerShell :
+
+```powershell
+cd [dossier d'implantation]
+Get-FileHash .\jAstroLaz_v2.4.exe, .\jAstroLaz-win64-2.4.zip
+```
 
 ## Téléchargement et installation
 
@@ -31,21 +47,6 @@ Configuration : Windows 10 ou 11, 64 bits.
 ### Message « Windows a protégé votre ordinateur » ?
 
 jAstroLaz n'est pas signé avec un certificat commercial (payant). Windows SmartScreen affiche donc un avertissement pour tout programme récent qu'il ne connaît pas encore. Cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
-
-## Sécurité et vérification
-
-Chaque fichier publié peut être vérifié :
-
-| Fichier | SHA-256 | Analyse antivirus |
-|---------|---------|-------------------|
-| `jAstroLaz_v2.4.exe` | `47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/47a3a58f27c73cbff76ee1b8a6afc279ba60cc281a5461ac9aa907303017fce3) |
-| `jAstroLaz-win64-2.4.zip` | `d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/d2c1313e0770337522b6822f6e124a13d74822daafd627654e2547e9c6dc6e4b) |
-
-Pour vérifier l'empreinte sous PowerShell :
-
-```powershell
-Get-FileHash .\jAstroLaz_v2.4.exe
-```
 Le programme ne se connecte à Internet que pour la vérification manuelle des mises à jour (menu dédié, interroge uniquement les releases publiques sur GitHub, sans envoyer ni collecter la moindre donnée). 
 Aucune autre fonction n’accède au réseau.
 
