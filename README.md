@@ -20,12 +20,12 @@ Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie v
 
 Private source commit: f3ea157
 
-Chaque fichier publié a été vérifié par VirusTotal comme en témoignent les compte rendus ci-dessous :
+Chaque fichier publié a été vérifié par VirusTotal, comme en témoignent les comptes rendus ci-dessous :
 
 |     Fichier               |   SHA-256                                                          | Analyse antivirus                                                                                                                      |
 |---------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `jAstroLaz_v2.4.exe`      | `1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866` | [VirusTotal : 0 / 64 détection](https://www.virustotal.com/gui/file/1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866 ) |
-| `jAstroLaz-win64-2.4.zip` | `a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712` | [VirusTotal : 0 / 66 détection](https://www.virustotal.com/gui/file/a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712 ) |
+| `jAstroLaz_v2.4.exe`      | `1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866` | [VirusTotal : 0/68 détections](https://www.virustotal.com/gui/file/1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866) |
+| `jAstroLaz-win64-2.4.zip` | `a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712` | [VirusTotal : 0/66 détections](https://www.virustotal.com/gui/file/a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712) |
 
 Pour vérifier les empreintes sous PowerShell :
 
