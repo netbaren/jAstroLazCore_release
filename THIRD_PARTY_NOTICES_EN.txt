@@ -1,0 +1,118 @@
+jAstroLazCore - third-party notices and credits
+================================================
+
+Version: 2.4
+(Version française : THIRD_PARTY_NOTICES.txt)
+
+This project is a Lazarus / Free Pascal astronomy application. The public
+packages built by the `uPS` scripts contain the Windows executables and the
+runtime resources, not the project's private source tree.
+
+Historical inspirations
+-----------------------
+
+- Astronomy applets by Juergen Giesen: historical study and inspiration.
+  No applet code is redistributed in the public runtime package.
+
+- JPARSEC, by T. Alonso Albi, Spain: Java package for astronomy and celestial
+  mechanics, used as a historical and conceptual reference for the original
+  Java work. No JPARSEC code or binaries are redistributed in the public
+  runtime package. This acknowledgement was communicated to the author, who
+  welcomed it (email of 28/10/2026).
+  JPARSEC source code: https://bitbucket.org/talonsoalbi/jparsec
+
+- JavAstro, by Filippo Bisognano, Italy: Java astronomy application, a
+  historical source of inspiration after JPARSEC. No JavAstro code or
+  binaries are redistributed in the public runtime package.
+
+Complementary resources
+-----------------------
+
+- Shadows Pro, sundial and astrolabe design software, www.shadowspro.com
+  (François Blateyron): reference in gnomonics for the "Sundial" panel and
+  the astrolabe. No Shadows code or data is used in jAstroLaz. Mention and
+  wording approved by the author (email of 31/10/2026).
+
+Catalogues, models and astronomical data
+----------------------------------------
+
+- Bright Star Catalog / Yale Bright Star Catalog (D. Hoffleit, W. H. Warren Jr.):
+  used through `resources/starsCatalog` to render the bright stars.
+
+- VSOP / VSOP87: planetary theory and associated data, originally produced by
+  IMCCE / Bureau des longitudes. Since the merger of IMCCE and SyRTE into the
+  Laboratoire Temps-Espace (LTE, 1 January 2025), these data are distributed
+  by the Service Espace de l'Observatoire de Paris (SE-OP) under the Licence
+  Ouverte 2.0 (Etalab Open Licence)
+  (https://github.com/etalab/licence-ouverte/blob/master/LO.md), as confirmed
+  by email by Mr Mickaël Gastineau (LTE) on 27/10/2026.
+  Source: Service espace de l'Observatoire de Paris - data last updated on
+  24/09/2026.
+  (see the terms of use, https://seop.obspm.fr/cgu/, section "Conditions
+  applicables aux données").
+
+- INPOP19a: planetary and lunar ephemerides, same conditions as VSOP87 above
+  (Licence Ouverte 2.0, SE-OP, confirmed on 27/10/2026).
+  Source: Service espace de l'Observatoire de Paris - data last updated on
+  24/09/2026.
+  The local runtime caches are rebuilt from the INPOP19a ASCII files; only
+  these derived caches are redistributed with the public package, not the
+  original ASCII sources.
+
+- IANA Time Zone Database: used to generate `resources/timezones.csv`.
+  The TZDB version used is given in the header of that file.
+
+- PascalTZ: time zone generator based on the PascalTZ sources found under
+  `tools/PascalTZ`, originally by José Mejuto and maintained by Denis Kozlov.
+  The local files indicate an LGPL / modified LGPL licence.
+
+- Milky Way (outlines and shades, MWSMP6 files): data by José R. Vieira
+  (São Paulo, Brazil, 2000), distributed with SkyChart / Cartes du Ciel.
+  They are based on the book "Uranografia, Descrição do Céu" by
+  R. R. de Freitas Mourão and on a Milky Way photomosaic by Axel Mellinger.
+  Original text by the author, reproduced as is:
+
+    The outline 1 and shade 1 are based on the book 'Uranografia, Descrição
+    do Céu', by R.R. de Freitas Mourão, a Brazilian astronomer. The equatorial
+    coordinates were manually taken from his maps. Then, they were converted
+    to galactic coordinates using Microsoft Excel and manually inserted onto a
+    bitmap as black pixels over a white background. The bitmap dimensions were
+    450 by 3600 pixels, making each pixel correspond to 0.1 degree. The pixels
+    were manually connected (and their connections smoothed) using Adobe
+    Photoshop 3.0. That created the base for outline 1. Finally, the space
+    between the two curves defining outline 1 was filled with black pixels,
+    creating the base for shade 1.
+
+    The outlines and shades 2 to 5 are based on a photomosaic of the Milky Way
+    created by the German astrophotographer Axel Mellinger. The original
+    picture, dowloaded from his website
+    (http://canopus.physik.uni-potsdam.de/~axm/astrophot.html), was 300 by
+    2400 pixels in size. It was expanded to 450 by 3600, using Adobe
+    Photoshop. Still in Adobe Photoshop, an 1 pixel 'minimum' filter was
+    applied to eliminate individual star images. After some adjustmests in
+    brightness and contrast and conversion to a grayscale bitmap, a 2 pixels
+    'gaussian blur' filter was used to create a 'cloudy' aspect. Then, a
+    'trace contour' filter was applied in four brightness levels, creating the
+    bases for outlines 2 to 5. These were filled with black pixels, creating
+    the bases for shades 2 to 5.
+
+    Once the base bitmap files had been created, an application written in
+    Microsoft Visual Basic 6.0 was used to scan the images, find black pixels,
+    get their coordinates in pixels, convert them to galactic coordinates and
+    then to equatorial coordinates which were sent to text files. These are
+    the DAT files included in MWSMP6.ZIP.
+
+    The average distance between each point in the outlines is 0.1° or 6'.
+    For the shades, it is 0.4º or 24'.
+
+    José R. Vieira, Sao Paulo, Brazil, Feb/2000
+
+Links and services mentioned in the interface
+---------------------------------------------
+
+- NOAA SWPC - Aurora 30 minute forecast
+- NASA - Solar System
+- IMCCE - Lettre d'information (newsletter)
+
+These links are references displayed in the application; their external
+content is not redistributed by the runtime package.

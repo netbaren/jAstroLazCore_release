@@ -1,69 +1,77 @@
-jAstroLazCore - mentions tierces et credits
+jAstroLazCore - mentions tierces et crédits
 ================================================
 
-Preparation release: 1.0.2
+Version : 2.4
+(English version: THIRD_PARTY_NOTICES_EN.txt)
 
 Ce projet est une application d'astronomie Lazarus / Free Pascal. Les paquets
-publics generes par les scripts `uPS` contiennent les executables Windows et les
-ressources runtime, pas l'arbre source prive du projet.
+publics générés par les scripts `uPS` contiennent les exécutables Windows et les
+ressources runtime, pas l'arbre source privé du projet.
 
 Inspirations historiques
 ------------------------
 
-- Applets astronomiques de Juergen Giesen : etude et inspiration historiques.
-  Aucun code d'applet n'est redistribue dans le paquet runtime public.
+- Applets astronomiques de Juergen Giesen : étude et inspiration historiques.
+  Aucun code d'applet n'est redistribué dans le paquet runtime public.
 
-- JPARSEC, T. Alonso Albi, Espagne : package Java dedié à l'astronomie et à la
+- JPARSEC, T. Alonso Albi, Espagne : package Java dédié à l'astronomie et à la
   dynamique céleste, utilisé comme référence historique et conceptuelle du
   travail Java initial. Aucun binaire ou source JPARSEC n'est redistribué dans
-  le paquet runtime public. Mention communiquee a l'auteur, qui l'a accueillie
+  le paquet runtime public. Mention communiquée à l'auteur, qui l'a accueillie
   favorablement (courriel du 28/10/2026).
   Code source JPARSEC : https://bitbucket.org/talonsoalbi/jparsec
-  (EN: JPARSEC, by T. Alonso Albi, Spain - historical and conceptual reference
-  for the original Java work. No JPARSEC code or binaries are redistributed.
-  Acknowledgement welcomed by the author, email of 28/10/2026.)
 
 - JavAstro, Filippo Bisognano, Italie : application d'astronomie Java, source
-  d'inspiration historique apres JPARSEC. Aucun binaire ou source JavAstro
-  n'est redistribue dans le paquet runtime public.
+  d'inspiration historique après JPARSEC. Aucun binaire ou source JavAstro
+  n'est redistribué dans le paquet runtime public.
 
-Catalogues, modeles et donnees astronomiques
+Ressources complémentaires
+--------------------------
+
+- Shadows Pro, conception de cadrans solaires et d'astrolabes,
+  www.shadowspro.com (François Blateyron) : référence en gnomonique pour
+  le panneau "Cadran solaire" et l'astrolabe. Aucun code ni donnée de
+  Shadows n'est repris dans jAstroLaz. Mention et formulation validées par
+  l'auteur (courriel du 31/10/2026).
+
+Catalogues, modèles et données astronomiques
 --------------------------------------------
 
 - Bright Star Catalog / Yale Bright Star Catalog (D. Hoffleit, W. H. Warren Jr.) :
-  utilise via `resources/starsCatalog` pour le rendu des etoiles brillantes.
+  utilisé via `resources/starsCatalog` pour le rendu des étoiles brillantes.
 
-- VSOP / VSOP87 : theorie planetaire et donnees associees, produites a
+- VSOP / VSOP87 : théorie planétaire et données associées, produites à
   l'origine par l'IMCCE / Bureau des longitudes. Depuis la fusion de l'IMCCE
   avec le SyRTE au sein du Laboratoire Temps-Espace (LTE, 1er janvier 2025),
-  ces donnees sont diffusees par le Service Espace de l'Observatoire de Paris
+  ces données sont diffusées par le Service Espace de l'Observatoire de Paris
   (SE-OP) sous Licence Ouverte 2.0
-  (https://github.com/etalab/licence-ouverte/blob/master/LO.md), confirme par
-  courriel par M. Mickael Gastineau (LTE) le 27/10/2026.
-  Source : Service espace de l'Observatoire de Paris - donnees mises a jour
-  le [24/09/2026].
+  (https://github.com/etalab/licence-ouverte/blob/master/LO.md), confirmé par
+  courriel par M. Mickaël Gastineau (LTE) le 27/10/2026.
+  Source : Service espace de l'Observatoire de Paris - données mises à jour
+  le 24/09/2026.
   (voir CGU, https://seop.obspm.fr/cgu/, section "Conditions applicables aux
-  donnees").
+  données").
 
-- INPOP19a : ephemerides planetaires et lunaires, memes conditions que VSOP87
-  ci-dessus (Licence Ouverte 2.0, SE-OP, confirme le 27/10/2026).
-  Source : Service espace de l'Observatoire de Paris - donnees mises a jour
-  le [24/09/2026].
+- INPOP19a : éphémérides planétaires et lunaires, mêmes conditions que VSOP87
+  ci-dessus (Licence Ouverte 2.0, SE-OP, confirmé le 27/10/2026).
+  Source : Service espace de l'Observatoire de Paris - données mises à jour
+  le 24/09/2026.
   Les caches runtime locaux sont reconstruits depuis les fichiers ASCII
-  INPOP19a; seuls ces caches derives sont redistribues avec le paquet public,
+  INPOP19a ; seuls ces caches dérivés sont redistribués avec le paquet public,
   pas les sources ASCII originales.
 
-- IANA Time Zone Database : utilisee pour generer `resources/timezones.csv`.
-  La version TZDB utilisee figure dans l'en-tete de ce fichier.
+- IANA Time Zone Database : utilisée pour générer `resources/timezones.csv`.
+  La version TZDB utilisée figure dans l'en-tête de ce fichier.
 
-- PascalTZ : generateur de fuseaux horaires base sur les sources PascalTZ
-  presentes sous `tools/PascalTZ`, initialement par Jose Mejuto et maintenues par
-  Denis Kozlov. Les fichiers locaux indiquent une licence LGPL / modified LGPL.
+- PascalTZ : générateur de fuseaux horaires basé sur les sources PascalTZ
+  présentes sous `tools/PascalTZ`, initialement par José Mejuto et maintenues
+  par Denis Kozlov. Les fichiers locaux indiquent une licence LGPL / modified
+  LGPL.
 
-- Voie lactee (contours et zones, fichiers MWSMP6) : donnees de Jose R. Vieira
-  (Sao Paulo, Bresil, 2000), diffusees avec SkyChart / Cartes du Ciel.
-  Elles s'appuient sur l'ouvrage "Uranografia, Descricao do Ceu" de
-  R. R. de Freitas Mourao et sur une photomosaique de la Voie lactee
+- Voie lactée (contours et zones, fichiers MWSMP6) : données de José R. Vieira
+  (São Paulo, Brésil, 2000), diffusées avec SkyChart / Cartes du Ciel.
+  Elles s'appuient sur l'ouvrage "Uranografia, Descrição do Céu" de
+  R. R. de Freitas Mourão et sur une photomosaïque de la Voie lactée
   d'Axel Mellinger. Texte d'origine de l'auteur, reproduit tel quel :
 
     The outline 1 and shade 1 are based on the book 'Uranografia, Descrição
@@ -101,12 +109,12 @@ Catalogues, modeles et donnees astronomiques
 
     José R. Vieira, Sao Paulo, Brazil, Feb/2000
 
-Liens et services mentionnes par l'interface
+Liens et services mentionnés par l'interface
 --------------------------------------------
 
 - NOAA SWPC - Aurora 30 minute forecast
 - NASA - Solar System
 - IMCCE - Lettre d'information
 
-Ces liens sont des references affichees dans l'application; leur contenu externe
-n'est pas redistribue par le paquet runtime.
+Ces liens sont des références affichées dans l'application ; leur contenu
+externe n'est pas redistribué par le paquet runtime.
