@@ -18,28 +18,14 @@ Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie v
 
 ## Sécurité et vérification
 
-Private source commit: f3ea157
-
-Chaque fichier publié a été vérifié par VirusTotal, comme en témoignent les comptes rendus ci-dessous :
-
-|     Fichier               |   SHA-256                                                          | Analyse antivirus                                                                                                                      |
-|---------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `jAstroLaz_v2.4.exe`      | `1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866` | [VirusTotal : 0/68 détections](https://www.virustotal.com/gui/file/1a4bf3fe6cc2b06f906c054bde0a3946ef729e63f122075f26f8ecdf31468866) |
-| `jAstroLaz-win64-2.4.zip` | `a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712` | [VirusTotal : 0/66 détections](https://www.virustotal.com/gui/file/a53c69ded77876ce838415b809812f53cb37f9e6b5d1ec426800bf19c684f712) |
-
-Pour vérifier les empreintes sous PowerShell :
-
-```powershell
-cd [dossier d'implantation]
-Get-FileHash .\jAstroLaz_v2.4.exe, .\jAstroLaz-win64-2.4.zip
-```
+Chaque fichier publié est vérifié par VirusTotal avant mise en ligne. Empreintes SHA-256 et liens des rapports : [VIRUSTOTAL.md](VIRUSTOTAL.md).
 
 ## Téléchargement et installation
 
 1. Ouvrir la page **[Releases](https://github.com/netbaren/jAstroLazCore_release/releases)** et prendre la dernière version.
 2. Deux formats au choix :
-   - `jAstroLaz_v2.4.exe` : installeur (réalisé avec [Inno Setup](https://jrsoftware.org/isinfo.php), un installeur gratuit très répandu) ;
-   - `jAstroLaz-win64-2.4.zip` : version portable, à décompresser et lancer sans installation.
+   - `jAstroLaz_v2.4.7.exe` : installeur (réalisé avec [Inno Setup](https://jrsoftware.org/isinfo.php), un installeur gratuit très répandu) ;
+   - `jAstroLaz-win64-2.4.7.zip` : version portable, à décompresser et lancer sans installation.
 3. Détails : voir [INSTALLATION_WINDOWS_FR.md](INSTALLATION_WINDOWS_FR.md).
 
 Configuration : Windows 10 ou 11, 64 bits.
