@@ -1,6 +1,6 @@
 # Vérification VirusTotal
 
-*[English version](VIRUSTOTAL_EN.md)*
+*[⇧ Retour au README](README.md) · [English version](VIRUSTOTAL_EN.md)*
 
 État de la version actuellement publiée. Pour l'historique des versions précédentes, voir les notes de chaque [Release](https://github.com/netbaren/jAstroLazCore_release/releases) (chaque release garde son propre rapport).
 
