@@ -16,6 +16,20 @@ Ce n'est pas une encyclopédie du ciel : c'est plutôt un **livre d'astronomie v
 - **Ciel étoilé** : étoiles brillantes, Voie lactée, planètes.
 - **Liste de sites d'observation** (Genève par défaut, horizon dégagé).
 
+## Nouveau : jAstroLaz édition Java
+
+jAstroLaz existe aussi en **édition Java**, qui reprend et prolonge le projet Java d'origine.
+Elle fonctionne sous **Windows, Linux et macOS**, sans installation : un seul fichier `jAstroLaz.jar`.
+
+Elle propose notamment :
+- un **calendrier lunaire** avec phénomènes et **libration** de la Lune ;
+- les **satellites** (lunes de Jupiter…) et les **éléments orbitaux** en 3D (précession, obliquité, excentricité, cycles de Milankovitch) ;
+- les **saisons** (équinoxes et solstices, heures UTC et locales) et les **éphémérides** exportables ;
+- un **atelier d'astrolabe** guidé, avec exercices ;
+- des **articles « À propos »** illustrés, ouverts dans votre navigateur.
+
+Les deux éditions sont indépendantes : on peut installer l'une, l'autre, ou les deux.
+
 ## Sécurité et vérification
 
 Chaque fichier publié est vérifié par VirusTotal avant mise en ligne. Empreintes SHA-256 et liens des rapports : [VIRUSTOTAL.md](VIRUSTOTAL.md).
@@ -30,6 +44,17 @@ Chaque fichier publié est vérifié par VirusTotal avant mise en ligne. Emprein
 
 Configuration : Windows 10 ou 11, 64 bits.
 
+### Édition Java (Windows, Linux, macOS)
+
+1. Installer **Java 21** ou plus récent, s'il n'est pas déjà présent (gratuit, par exemple sur [adoptium.net](https://adoptium.net)).
+2. Dans les Assets de la release, télécharger `jAstroLaz-java.zip` et le décompresser dans un dossier de votre choix.
+3. Lancer :
+   - Windows : double-clic sur `jAstroLaz.bat` (ou sur `jAstroLaz.jar`) ;
+   - Linux / macOS : `java -jar jAstroLaz.jar`.
+
+Le dossier `inpop19a_cache` (éphémérides INPOP) doit rester à côté de `jAstroLaz.jar`.
+L'édition Java n'accède pas au réseau : les liens vers des sites externes s'ouvrent simplement dans votre navigateur.
+
 ### Message « Windows a protégé votre ordinateur » ?
 
 jAstroLaz n'est pas signé avec un certificat commercial (payant). Windows SmartScreen affiche donc un avertissement pour tout programme récent qu'il ne connaît pas encore. Cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
@@ -41,6 +66,7 @@ Aucune autre fonction n'accède au réseau.
 
 Le projet est né vers 2004–2007 en **Java**, sous Eclipse, à partir d'une passion pour les calculs astronomiques.
 Repris en 2020, il a été entièrement réécrit en **Lazarus / Free Pascal** à partir de 2026, avec l'aide d'assistants IA (Claude, Codex).
+En parallèle, le projet Java d'origine a été modernisé (Java 21 / Swing) : c'est l'**édition Java**. Les deux éditions s'enrichissent mutuellement.
 
 ## Remerciements et sources
 
@@ -78,6 +104,20 @@ It isn't an encyclopedia of the sky: think of it more as a **visual astronomy bo
 - **Starry sky**: bright stars, the Milky Way, planets.
 - **List of observation sites** (Geneva by default, clear horizon).
 
+## New: jAstroLaz Java edition
+
+jAstroLaz is also available as a **Java edition**, which builds on the original Java project.
+It runs on **Windows, Linux and macOS**, with no installation: a single `jAstroLaz.jar` file.
+
+Highlights:
+- a **lunar calendar** with phenomena and the Moon's **libration**;
+- **satellites** (Jupiter's moons…) and **orbital elements** in 3D (precession, obliquity, eccentricity, Milankovitch cycles);
+- **seasons** (equinoxes and solstices, UTC and local times) and exportable **ephemerides**;
+- a guided **astrolabe workshop** with exercises;
+- illustrated **"About" articles**, opened in your web browser.
+
+The two editions are independent: install either one, or both.
+
 ## Security and verification
 
 Each published file is scanned by VirusTotal before release. SHA-256 fingerprints and report links: [VIRUSTOTAL_EN.md](VIRUSTOTAL_EN.md).
@@ -92,6 +132,17 @@ Each published file is scanned by VirusTotal before release. SHA-256 fingerprint
 
 Requirements: Windows 10 or 11, 64-bit.
 
+### Java edition (Windows, Linux, macOS)
+
+1. Install **Java 21** or later if it isn't already there (free, for example from [adoptium.net](https://adoptium.net)).
+2. In the release Assets, download `jAstroLaz-java.zip` and unzip it into a folder of your choice.
+3. Run:
+   - Windows: double-click `jAstroLaz.bat` (or `jAstroLaz.jar`);
+   - Linux / macOS: `java -jar jAstroLaz.jar`.
+
+Keep the `inpop19a_cache` folder (INPOP ephemerides) next to `jAstroLaz.jar`.
+The Java edition does not access the network: links to external websites simply open in your browser.
+
 ### "Windows protected your PC" message?
 
 jAstroLaz isn't signed with a commercial (paid) certificate. Windows SmartScreen shows this warning for any recent program it doesn't yet recognize. Click **More info**, then **Run anyway**.
@@ -103,6 +154,7 @@ No other feature accesses the network.
 
 The project was born around 2004–2007 in **Java**, under Eclipse, out of a passion for astronomical calculations.
 Picked back up in 2020, it was entirely rewritten in **Lazarus / Free Pascal** starting in 2026, with the help of AI assistants (Claude, Codex).
+In parallel, the original Java project was modernized (Java 21 / Swing): this is the **Java edition**. Each edition feeds the other.
 
 ## Acknowledgements and sources
 
